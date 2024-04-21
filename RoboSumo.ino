@@ -42,14 +42,13 @@ void loop(){
 
   if(sensor_frente == 0 && sensor_traseiro == 0){
     while(distancia>distancia_ataque){
-      if(random(1,3) = 1){
-        motores.setSpeed(velocidade_padrao)
+      if(random(1,3) == 1){
+        motores.setSpeed(velocidade_padrao);
         motores.forwardA();
         motores.backwardB();
         delay(300);
-      }
-      else(){
-        motores.setSpeef(velocidade_padrao)
+      }else{
+        motores.setSpeed(velocidade_padrao);
         motores.forwardB();
         motores.backwardA();
         delay(300);
