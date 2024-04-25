@@ -54,7 +54,8 @@ void loop(){
 
     }
     motores.setSpeed(velocidade_ataque);
-    motores.forward();
+    motores.forwardA();
+    motores.backwardB()
     delay(500);
   }
 
