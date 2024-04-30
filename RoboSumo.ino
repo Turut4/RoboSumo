@@ -44,32 +44,31 @@ void loop(){
     while(distancia>distancia_ataque){
       if(random(1,3) == 1){
         motores.setSpeed(velocidade_padrao);
-        motores.backward()
+        motores.backwardA();
+        motores.forwardB();
         delay(300);
       }else{
         motores.setSpeed(velocidade_padrao);
-        motores.forward;
+        motores.forwardA();
+        motores.backwardB();
         delay(300);
       }
 
     }
     motores.setSpeed(velocidade_ataque);
-    motores.forwardA();
-    motores.backwardB()
+    motores.forward();
     delay(500);
   }
 
   if(sensor_frente == 1 && sensor_traseiro == 0){
     motores.setSpeed(velocidade_ataque);
-    motores.forwardA();
-    motores.backwardB()
+    motores.backward();
     delay(400);
   }
   
   if(sensor_frente == 0 && sensor_traseiro == 1){
     motores.setSpeed(velocidade_ataque);
-    motores.backwardA();
-    motores.forwardB()
+    motores.forward();
     delay(400);
   }
 
