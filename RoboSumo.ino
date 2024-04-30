@@ -48,7 +48,7 @@ void loop(){
         delay(300);
       }else{
         motores.setSpeed(velocidade_padrao);
-        motores.forward;
+        motores.forward();
         delay(300);
       }
 
