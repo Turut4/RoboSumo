@@ -60,10 +60,7 @@ void loop(){
       }
 
     }
-    motores.setSpeed(velocidade_ataque);
-    motores.forward();
 
-    delay(500);
   }
 
   if(sensor_frente == 1 && sensor_traseiro == 0){
