@@ -41,35 +41,41 @@ void loop(){
   sensor_traseiro = digitalRead(IR_traseiro);
 
   if(sensor_frente == 0 && sensor_traseiro == 0){
-    while(distancia>distancia_ataque){
-      if(random(1,3) == 1){
+    if (distancia < distancia_ataque){
+      motores.setSpeed(velocidade_ataque);
+      motores.forward();
+
+      delay(500);
+    }else{
+      if(random(1,3) == 1);
         motores.setSpeed(velocidade_padrao);
-        motores.backward();
-        delay(300);
+        motores.forwardA();
+        motores.backwardB();
+        delay(300);  
       }else{
         motores.setSpeed(velocidade_padrao);
-        motores.forward();
+        motores.forwardB();
+        motores.backwardA();
         delay(300);
       }
 
     }
     motores.setSpeed(velocidade_ataque);
-    motores.forwardA();
-    motores.backwardB();
+    motores.forward();
+
     delay(500);
   }
 
   if(sensor_frente == 1 && sensor_traseiro == 0){
     motores.setSpeed(velocidade_ataque);
-    motores.forwardA();
-    motores.backwardB();
+    motores.backward();
+
     delay(400);
   }
   
   if(sensor_frente == 0 && sensor_traseiro == 1){
     motores.setSpeed(velocidade_ataque);
-    motores.backwardA();
-    motores.forwardB();
+    motores.forward();
     delay(400);
   }
 
