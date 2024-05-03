@@ -47,7 +47,7 @@ void loop(){
 
       delay(500);
     }else{
-      if(random(1,3) == 1);
+      if(random(1,3) == 1){
         motores.setSpeed(velocidade_padrao);
         motores.forwardA();
         motores.backwardB();
