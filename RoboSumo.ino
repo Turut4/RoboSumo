@@ -47,8 +47,13 @@ void loop(){
       motores.backward();
   
 
+<<<<<<< HEAD
       delay(2000);
     }else if(distancia > distancia_ataque){
+=======
+      delay(500);
+    }else{
+>>>>>>> 0bd2f9f9986dbdb96d4319fc1a545bb064f38b26
       if(random(1,3) == 1){
         motores.setSpeed(velocidade_padrao);
         motores.backwardB();
