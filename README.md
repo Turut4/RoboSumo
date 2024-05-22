@@ -120,9 +120,6 @@ void loop(){
 3. **Power the Robot**: Provide power to the robot and place it in the sumo ring.
 4. **Observe the Behavior**: The robot will start moving and reacting based on the sensor inputs.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contributing
 
